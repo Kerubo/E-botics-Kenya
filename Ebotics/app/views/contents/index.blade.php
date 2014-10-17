@@ -29,18 +29,26 @@
   {{Form::close()}}
   </p>
 <h2>Creating a generation that thinks not that follows</h2>
-<div style="float: left; margin: 0px 3px 3px 5px;align:center;">
 
-
-<div style="clear: "></div>
-</div>
-<!-- end margin -->
 <div style="margin-left: 10px">
 <!-- start margin -->
 
 
-<div style="float: left; width: 30px; margin: 0px 3px 3px 5px;">
+<div style="float: left; width: 500px; margin: 0px 3px 3px 5px;">
+<div>Introduction to Robotics
 
+This robotics introduction teaches the basics of the robot world, offering robot information covering everything from artificial intelligence to robot mechanics and robots in industries such as car manufacturing and the military.
+
+Learn about robots with the concepts provided in this great technology lesson plan.
+      
+
+Definitions:
+
+    What does the word ‘robotics’ mean? - The science or study of the technology associated with the design, fabrication, theory, and application of robots.
+
+    What about ‘robot’? - Robots are any machine that does work on its own, automatically.
+
+ </div>
 
 <div style="clear: "></div>
 </div>
