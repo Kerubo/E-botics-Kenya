@@ -76,9 +76,9 @@ class ContentController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$content = Contents::where('slug', $id)->first();
+		$contents = Content::where('slug', $id)->first();
 
-		return View::make('contents.show', compact('content'));
+		return View::make('contents.show', compact('contents'));
 	}
 
 

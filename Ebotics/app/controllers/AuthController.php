@@ -46,7 +46,26 @@ class AuthController extends BaseController
       return Redirect::route('contents.show');
     }
   }
+public function store()
+  {
+    $playload = Input::all();
+     $validation = validation::make($playload,Contents::$rules);
 
+     if($validation->fails())
+     {
+            return Redirect::to('signup')
+            ->withErrors($validation)->withInput(Input::except('password'));
+     }  
+     else
+     {
+      $auth = new User;
+      $auth->username = Input::get('username');
+      $auth->password = Hash::make(Input::get('password'));
+      $auth->save();
+
+        return Redirect::to('contents.show');
+     }
+  }
   public function loginPage()
   {
     return View::make('auth.login');

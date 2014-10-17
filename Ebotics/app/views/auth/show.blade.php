@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
   <div class="page-header">
-    <a href="{{route('contents.create')}}" class="btn btn-default">
+    <a href="{{route('auth.login')}}" class="btn btn-default">
       &larr; Back to Content
     </a>
   </div>

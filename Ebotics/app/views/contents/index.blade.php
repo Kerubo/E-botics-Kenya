@@ -1,42 +1,88 @@
 @extends('master')
 @section('content')
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<div style="  height:1000px; background-image: url('https://graphicpolicy.files.wordpress.com/2014/10/transformers-robots-in-disguise-warriors-optimus-prime-1-copy.jpg' );:margin:40px auto">
   <div class="page-header">
     
     <div class="pull-right btn-group">
       
-      <a href="/signup" class="btn btn-primary">Signup</a>
+      <a href="/signup" class="btn btn-primary" style="color:orange;">Signup</a>
     </div>
     
     <div class="pull-right btn-group">
-      <a href="/login" class="btn btn-primary">Login</a>
+      <a href="/login" class="btn btn-primary" style="color:orange;">Login</a>
     </div>
 
 
 
     
   
-    <h1>E-botics  Kenya</h1>
+    <h1 style="color:#F05A28;">E-botics  Kenya</h1>
   </div>
   <p>
   {{Form::open(['route' => 'contents.search', 'method' => 'GET', 'class' => 'form-inline'])}}
     {{Form::text('search', null, ['class' => 'form-control'])}}
     {{Form::submit('Search', ['class' => 'btn btn-default'])}}
   {{Form::close()}}
-  <br>
-  <h2>CREATING A GENERATION THAT THINKS NOT THAT FOLLOWS</h2>
-  Website application that teaches kids from
-the ages of 6-14 years on entrepreneurship
-and robotics.
-Focusing on primary school students from the age of 6 to 14 who have a passion in technology
-but have no means of accessing the tutorials or means to learn the subjects by themselves, We
-have therefore taken the initiative of finding out from the students and parents how much they
-would like to have access of this vital information.<br>
-
-    <img src="public/assets/images/watoto.jpg">
   </p>
- 
+<h2>Creating a generation that thinks not that follows</h2>
+<div style="float: left; margin: 0px 3px 3px 5px;align:center;">
 
-  @foreach ($contents as $content)
+
+<div style="clear: "></div>
+</div>
+<!-- end margin -->
+<div style="margin-left: 10px">
+<!-- start margin -->
+
+
+<div style="float: left; width: 30px; margin: 0px 3px 3px 5px;">
+
+
+<div style="clear: "></div>
+</div>
+<!-- end margin -->
+
+<div style="margin-left: 10px">
+
+<div style="float: left; width: 300px; margin: 4px 3px 3px 5px;">
+<!-- start float -->
+
+
+<div>
+<div style="clear: all"></div>
+</div><!-- end float -->
+<div style="float: left; width: 300px; height:300px; margin: 0px 3px 3px 5px;">
+<!-- start float2 -->
+
+
+<div>You are not following anybody.</div>
+
+<div style="clear: clear all"></div>
+</div><!-- end float 2-->
+
+<div style="float: left; width: 300px; height:300px; color:#FO5A28; margin: 0px 3px 3px 5px;">
+<!-- start float2 -->
+
+
+<div></div>
+
+<div style="clear: clear all"></div>
+</div><!-- end float 2-->
+
+
+
+
+ 
+<div class="pull-right btn-group">
+      <a href="/logout" class="btn btn-primary" style="color:#FO5A28;">
+      Next Step</a>
+    </div>
+    </div>
+  <!---@foreach ($contents as $content)
     <li>
       <h2>
         <a href="{{route('contents.show', [$content->slug])}}">
@@ -46,5 +92,5 @@ would like to have access of this vital information.<br>
     </li>
   @endforeach
 
-  {{$contents->links()}}
+  {{$contents->links()}}-->
 @stop
