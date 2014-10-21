@@ -55,7 +55,7 @@ class ContentController extends \BaseController {
 		$validation = Validator::make($data, $rules);
 		if($validation->passes())
 		{
-			// new Instance of contentt Model
+			// new Instance of content Model
 			$content = new Content($data);
 			$user = Auth::user(); // User in session
 			// Create related content model
