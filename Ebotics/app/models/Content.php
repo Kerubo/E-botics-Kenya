@@ -6,7 +6,7 @@ class Content extends Eloquent
 {
   protected $fillable = ['title', 'text', 'slug'];
 
-  // A post belongs to an author
+ 
   public function author()
   {
     return $this->belongsTo('User', 'user_id');
