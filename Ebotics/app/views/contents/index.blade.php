@@ -101,7 +101,7 @@ Some questions to think about:<br>
 </div><!-- end float 2-->
 
 <div class="pull-right btn-group">
-      <a href="/logout" class="btn btn-primary" style="color:#FO5A28; background:orange;">
+      <a href="/signup" class="btn btn-primary" style="color:#FO5A28; background:orange;">
       Next Step</a>
     </div>
      <hr>

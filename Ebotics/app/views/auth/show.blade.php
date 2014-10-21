@@ -10,7 +10,7 @@
     {{$content->text}}
   </p>
   <blockquote>
-    <small>Author</small>
-    {{$content->author->username}}
+    <small>User</small>
+    {{$content->User->username}}
   </blockquote>
 @stop

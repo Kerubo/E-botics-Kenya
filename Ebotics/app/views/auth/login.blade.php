@@ -5,7 +5,7 @@
     <div class="pull-right">
       <a href="/signup" class="btn btn-primary">Sign Up</a>
     </div>
-    <h2 style="color:#F05A28;">Login to your Account</h2>
+    <h2 style="color:#F05A28;">  <i class='fa fa-lock'></i> Login to your Account</h2>
   </div>
   {{Form::open(['action' => 'AuthController@login'])}}
   <div class="form-group">
