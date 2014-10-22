@@ -13,7 +13,8 @@
 Route::get('/', function()
 {return View::make('master');
 });
-
+Route::resource('/user', 'UserController');
+Route::controller('/', 'HomeController');
 Route::get('login', function()
 {
 	return View::make('auth.login');
