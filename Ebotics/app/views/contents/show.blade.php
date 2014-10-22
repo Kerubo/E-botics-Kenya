@@ -1,16 +1,20 @@
 @extends('master')
+
 @section('content')
-  <div class="page-header">
-    <a href="{{route('contents.create')}}" class="btn btn-default">
-      &larr; Back to Content
-    </a>
+<div class="page-header">
+  <div class="pull-right">
+    <div class="btn-group">
+      <!-- Back to list of all users -->
+      <a href="{{ route('contents.create') }}" class="btn btn-default">Back</a>
+      <!-- Link to Edit Profile Page -->
+      <a href="{{ route('contents.edit', array($user->id)) }}" class="btn btn-default">Edit Profile</a>
+    </div>
   </div>
-  <p class="lead">{{$content->title}}</p>
-  <p>
-    {{$content->text}}
-  </p>
-  <blockquote>
-    <small>Author</small>
-    {{$content->author->username}}
-  </blockquote>
+  <h2>Show Profile</h2>
+</div>
+<!-- User Details goes here -->
+<p class="lead">Name: {{ $user->names }}</p>
+<p class="lead">Email: {{ $user->e-mail}}</p>
+<p class="lead">password: {{ $user->password }}</p>
+
 @stop
